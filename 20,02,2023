@@ -1,0 +1,123 @@
+//
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//    vector<int> num{ 1,2,3,1,2 };
+//    int i = 0;
+//    do {
+//        if (num[i] == 1)cout << "atradu";
+//        i++;
+//      
+//    } while (i < num.size());
+//    int i = 0;
+//    do {
+//        if (num[i] == 4)cout << "atradu";
+//        i++;
+//    } while (i < num.size());
+//    int i = 0;
+//}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//    vector<string>country{ "USA", "UK", "China", "India", "Canada", "Australia" };
+//    vector<string>code{ "+1","+44","+86","+91","+1","+61" };
+//    cout << "Ievadiet savu valsts kodu" << endl;
+//    string c1;
+//    cin >> c1;
+//
+//    int i = 0;
+//        do {
+//            if (code[i] == c1)cout<<country[i]<< endl;
+//            i++;
+//          
+//        } while (i < code.size());
+//}
+//
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//    vector<string>names{ "Anna","Antons","Vlads","Artemijs" };
+//    vector<string>marks{ "3","8","7","4" };
+//    cout << "Ievadiet atzīmi" << endl;
+//    string n1;
+//    cin >> n1;
+//
+//    int i = 0;
+//    do {
+//        if (marks[i] == n1)cout << names[i] << endl;
+//        i++;
+//    } while (i < marks.size());
+//}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//	vector<int>num{ 2,3,5,7 };
+//	int i = 0;
+//	do {
+//		cout << num[i] * num[i] << endl;
+//		i++;
+//	} while (i < num.size());
+//}
+//
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//	vector<string>holidays{ "Lacplesa diena", "Latvijas Republikas proklamesanas diena" };
+//	vector<string>data{ "11.novembris", "18.novembris" };
+//	cout << "Vai Jus gribat redzet valsts svetkus?( ja vai ne )" << endl;
+//	string answer;
+//	bool atr = false;
+//	cin >> answer;
+//
+//	int i = 0;
+//	do {
+//		if (answer == "yes")
+//		{
+//			cout << holidays[i] << endl;
+//			i++;
+//			atr = true;
+//		}
+//	} while ( i < data.size());
+//
+//
+//	if (atr == false)cout << "Good bye";
+//
+//}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//int main()
+//{
+//	vector<int>studentsnum{ 0,-1,+2,-5,-10,+2,-1,0,+5,+2 };
+//	int i = 0, k = 0;
+//	do {
+//		if (studentsnum[i] > 0) {
+//			k++;
+//		}
+//		i++;
+//
+//	} while (i < studentsnum.size());
+//	cout << k;
+//}
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<string>a{ "UK", "Brazil", "Portugal", "Sweden", "Canada", "USA" };
+	  int i = 0;
+	  a.pop_back();
