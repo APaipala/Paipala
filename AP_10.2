@@ -119,3 +119,73 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+//Izmanto iostream #include (biblioteku)
+
+#include
+
+#include
+
+//Izmanto fstream
+
+#include
+
+//Pievieno std namespace
+
+using namespace std;
+
+//Deklarē main() funkciju
+
+int main() {
+
+//Iztaisi fstream objekto nosaucot to my_file.
+
+fstream my_file;
+
+//Lieto open() funkciju ar my_fail, lai varētu rakstīt failā.
+
+my_file.open("my_file.txt", ios::out);
+
+//Lieto if lai pārbaudīt vai fails bija iztaisīts
+
+if (!my_file) {
+
+//Ja fails nebija iztaisīts, informē par to lietotāju.
+
+cout << "File not created!";
+
+//Pabeidz if izteiksmi.
+
+}
+
+//Lieto else, darbībām ja fails tika iztaisīts
+
+else {
+
+///Informē par to lietotāju, ka fails tika iztaisīts.
+
+cout << "File created successfully!";
+
+//Ievada lielu enter
+
+my_file << " ";
+
+//Lieto close funciju, lai aizvert failu.
+
+my_file.close();
+
+//Aizver else izteiksmi.
+
+}
+
+//Uzraksti vērtību, kas būs atgriezta.
+
+return 0;
+
+//Aizver main funkciju.
+
+}
